@@ -1,0 +1,34 @@
+# GitHubのドキュメントリンク（ファイルを無視する方法についての詳細）
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# 依存関係
+# dependencies
+# /node_modules: Node.jsプロジェクトでnpmまたはyarnを使用してインストールされる依存関係が保存されるディレクトリ
+/node_modules
+# /.pnp と .pnp.js: YarnのPlug'n'Play機能に関連するファイル
+/.pnp
+.pnp.js
+
+# テスト
+# /coverage: テストカバレッジレポートが生成されるディレクトリ
+/coverage
+
+# 本番環境
+# /build: ビルドされた（トランスパイルまたはバンドルされた）アプリケーションファイルが保存されるディレクトリ
+/build
+
+# その他
+# .DS_Store: macOSでファイルシステムが生成する隠しファイル（フォルダのビューオプションなどを保存）
+# misc
+.DS_Store
+
+# .env ファイル群: 環境変数を格納する設定ファイル（ローカル、開発、テスト、本番環境用）
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# npm と yarn のログファイル
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

@@ -1,0 +1,39 @@
+/* Google FontsからSource Sans Proフォントをインポート */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+/* html、body、#root、.app、.content に共通のスタイルを適用 */
+html,
+body,
+#root,
+.app,
+.content {
+  height: 100%;
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+/* .appクラスに適用されるスタイル */
+.app {
+  display: flex; /* フレックスボックスとして表示 */
+  position: relative; /* 相対的な位置 */
+}
+
+/* カスタムスクロールバーのスタイル定義 */
+/* スクロールバーの幅 */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* スクロールバーのトラック（背景）部分 */
+::-webkit-scrollbar-track {
+  background: #e0e0e0; /* 薄い灰色の背景 */
+}
+
+/* スクロールバーのハンドル（操作部分） */
+::-webkit-scrollbar-thumb {
+  background: #888; /* 濃い灰色 */
+}
+
+/* スクロールバーのハンドルがホバーされたとき */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* より濃い灰色 */
+}
